@@ -1,20 +1,41 @@
-{% extends 'base.html.twig' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Accueil</title>
+        <link rel="stylesheet" href="{{ asset('Stylesheet.css') }}">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="CV">Curriculum vitae</a></li>
+                    <li><a href="Portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+        <footer class="ftr">
+            <a href="CDU">Conditions d'utilisations</a>
+        </footer>
+        <div class="ecran">
+            <div class="carte" data-tilt>
+                <img src="{{ asset('Profil2.png') }}">
+                <h2>Comte Bastien</h2>
+                <p>Ceci est ma petite phrase d'accroche turbo mega cool</p>
+                <div class="reseau">
+                    <a href="https://fr.linkedin.com/"><img src="{{ asset('5a22d434cad559.9980489315122319888308.png') }}"></a>
+                    <a href="https://github.com/"><img src="{{ asset('kisspng-computer-icons-github-5b0f05d23f1853.7688163915277111862585.png') }}"></a>
+                </div>
+                <a href="En_savoir_plus" class="bouton">En savoir plus</a>
+            </div>
+        </div>
+        <script src="{{ asset('vanilla-tilt.js') }}"></script>
+    </body>
 
-{% block title %}Hello PagesController!{% endblock %}
+</html>
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/Baftou/SAE14/SAE14/src/Controller/PageController.php'|file_link(0) }}">src/Controller/PageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/Baftou/SAE14/SAE14/templates/page/index.html.twig'|file_link(0) }}">templates/page/index.html.twig</a></code></li>
-    </ul>
-</div>
-{% endblock %}
+
+

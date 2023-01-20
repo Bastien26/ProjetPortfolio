@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -25px;
+}
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin-left: -6px;
+    transition: color 0.5s;
+}
+.navbar a:hover {
+    color : #ff1648;
+}
+.navbar .nav-links ul{
+    display: flex;
+    padding: 30px 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    margin-left: -36px;
+    margin-top: -7px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+.navbar .nav-links ul li{
+    margin: 0 25px;
+    list-style: none;
+
+}
+.ftr {
+    position: absolute;
+    bottom: 0;
+}
+.ftr a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+.ecran {
+    min-height: 100vh;
+    width: 100%;
+    background: url("Image3.png") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carte {
+    width: 90%;
+    max-width: 440px;
+    color: aliceblue;
+    text-align: center;
+    padding: 32px 30px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+.carte img {
+    border-radius: 50%;
+    width: 45%;
+}
+.carte h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.carte p {
+    font-size: 20px;
+    margin: 10px auto;
+    max-width: 330px;
+}
+.carte .reseau img {
+    width: 40px;
+    border-radius: 50%;
+    margin: 10% 5%;
+    transition: background 0.5s;
+}
+.carte .reseau img:hover {
+    background: #ff1648;
+}
+.bouton {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background: black;
+    color: #dfdfdf;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: color 0.5s;
+}
+.bouton:hover {
+    color: #ff1648;
+}
+@media screen and (max-width: 600px){
+    .nav-links {
+        display: none;
+    }
+}
