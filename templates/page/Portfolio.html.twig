@@ -1,10 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ asset('Stylesheet.css') }}">
 </head>
 <body>
-
+    <nav class="navbar7">
+        <div class="nav-links7">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="CV">Curriculum vitae</a></li>
+                <li><a href="Portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <footer class="ftr7">
+        <a href="CDU">Conditions générales d'utilisations</a>
+    </footer>
+    <div class="ecran1">
+        <div class="carte1" data-tilt>
+            <img src="{{ asset('profil.png') }}">
+            <h2>Profil</h2>
+            <p>Je m'appelle Comte Bastien, j'ai 18 ans et je suis en première année de BUT Réseau et Télécommunication.</p>
+        </div>
+        <div class="carte3" data-tilt>
+            <img src="{{ asset('competences.png') }}">
+            <h2>Compétences</h2>
+            <p><br>-Intégration au développement collaboratif<br><br>-Utiliser un systéme informatique<br><br>-Installer un poste client<br><br>-Maitriser les lois fondamentales de l'éléctricité<br><br>-Configurer les fonctions de base du réseau local (Ethernet, IPv4,intro IPv6,commutation,VLANs,routage statique)</p>
+        </div>
+        <div class="carte2" data-tilt>
+            <img src="{{ asset('certificat.png') }}">
+            <h2>Languages</h2>
+            <p><br>-Francais<br><br>-Anglais</p>
+        </div>
+    </div>
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .navbar7 {
+        position: absolute;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: -25px;
+    }
+    .navbar7 a {
+        color: black;
+        text-decoration: none;
+        margin-left: -6px;
+        transition: color 0.5s;
+    }
+    .navbar7 a:hover {
+        color : #ff1648;
+    }
+    .navbar7 .nav-links7 ul{
+        display: flex;
+        padding: 30px 20px;
+        border: 1px solid rgba(255,255,255,0.3);
+        margin-left: -36px;
+        margin-top: -7px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        backdrop-filter: blur(5px);
+    }
+    .navbar7 .nav-links7 ul li{
+        margin: 0 25px;
+        list-style: none;
+
+    }
+    .ftr7 {
+        position: absolute;
+        bottom: 0;
+    }
+    .ftr7 a {
+        color: black;
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+    }
+    .ecran1 {
+        min-height: 100vh;
+        width: 100%;
+        background: url("{{ asset('BGP.png') }}");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .carte1 {
+        width: 90%;
+        max-width: 440px;
+        color: aliceblue;
+        text-align: center;
+        padding: 32px 30px;
+        border: 1px solid rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        backdrop-filter: blur(5px);
+    }
+    .carte1 img {
+        width: 45%;
+    }
+    .carte1 h2 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 20px;
+        color: black;
+    }
+    .carte1 p {
+        font-size: 20px;
+        margin: 10px auto;
+        max-width: 330px;
+        color: black;
+    }
+    .carte2 {
+        width: 90%;
+        max-width: 440px;
+        color: aliceblue;
+        text-align: center;
+        padding: 32px 30px;
+        border: 1px solid rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        backdrop-filter: blur(5px);
+    }
+    .carte2 img {
+        width: 45%;
+    }
+    .carte2 h2 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 20px;
+        color: black;
+    }
+    .carte2 p {
+        font-size: 20px;
+        margin: 10px auto;
+        max-width: 330px;
+        color: black;
+    }
+    .carte3 {
+        width: 90%;
+        max-width: 440px;
+        color: aliceblue;
+        text-align: center;
+        padding: 32px 30px;
+        border: 1px solid rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        backdrop-filter: blur(5px);
+    }
+    .carte3 img {
+        width: 45%;
+    }
+    .carte3 h2 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 20px;
+        color: black;
+    }
+    .carte3 p {
+        font-size: 20px;
+        margin: 10px auto;
+        max-width: 330px;
+        color: black;
+    }
+</style>
 </html>
+
+
+

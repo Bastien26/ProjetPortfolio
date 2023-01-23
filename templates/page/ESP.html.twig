@@ -2,9 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Loisirs</title>
+    <link rel="stylesheet" href="{{ asset('Stylesheet.css') }}">
 </head>
 <body>
-
+    <nav class="navbar2">
+        <div class="nav-links2">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="CV">Curriculum vitae</a></li>
+                <li><a href="Portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+    <footer class="ftr2">
+        <a href="CDU">Conditions générales d'utilisations</a>
+    </footer>
+    <div class="ecran1">
+        <div class="carte1" data-tilt>
+            <img src="{{ asset('mode-de-vie.png') }}">
+            <h2>Mes loisirs</h2>
+            <p>-Impression 3D<br>-Mécanique<br>-Jeux vidéo<br>-Escalade<br>-VTT</p>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+<style>
+    .navbar2 {
+        position: absolute;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: -25px;
+    }
+    .navbar2 a {
+        color: aliceblue;
+        text-decoration: none;
+        margin-left: -6px;
+        transition: color 0.5s;
+    }
+    .navbar2 a:hover {
+        color : #ff1648;
+    }
+    .navbar2 .nav-links2 ul{
+        display: flex;
+        padding: 30px 20px;
+        border: 1px solid rgba(255,255,255,0.3);
+        margin-left: -36px;
+        margin-top: -7px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        backdrop-filter: blur(5px);
+    }
+    .navbar2 .nav-links2 ul li{
+        margin: 0 25px;
+        list-style: none;
+
+    }
+    .ftr2 {
+        position: absolute;
+        bottom: 0;
+    }
+    .ftr2 a {
+        color: black;
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+    }
+    .ecran1 {
+        min-height: 100vh;
+        width: 100%;
+        background: url("{{ asset('gradient-pink-blue-linear-highlight-1600x900-c2-191970-9b154f-l-67-a-345-f-21 (1).png') }}");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .carte1 {
+        width: 90%;
+        max-width: 440px;
+        color: aliceblue;
+        text-align: center;
+        padding: 32px 30px;
+        border: 1px solid rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        backdrop-filter: blur(5px);
+    }
+    .carte1 img {
+        width: 65%;
+    }
+    .carte1 h2 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .carte1 p {
+        font-size: 20px;
+        margin: 10px auto;
+        max-width: 330px;
+    }
+</style>

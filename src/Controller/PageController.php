@@ -32,7 +32,7 @@ class PageController extends AbstractController
     #[Route('/CDU', name: 'CDU')]
     public function CDU(): Response
     {
-        return $this->render('page/Portfolio.html.twig', [
+        return $this->render('page/CDU.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }
@@ -40,6 +40,13 @@ class PageController extends AbstractController
     public function ESP(): Response
     {
         return $this->render('page/ESP.html.twig', [
+            'controller_name' => 'PageController',
+        ]);
+    }
+    #[Route('/telechargement', name: 'telechargement')]
+    public function telechargement(): Response
+    {
+        return $this->render('page/Telechargement.html.twig', [
             'controller_name' => 'PageController',
         ]);
     }

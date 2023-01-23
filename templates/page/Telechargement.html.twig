@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Telechargement</title>
+</head>
+<body>
+<nav class="navbar5">
+    <div class="nav-links5">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="CV">Curriculum vitae</a></li>
+            <li><a href="Portfolio">Portfolio</a></li>
+        </ul>
+    </div>
+</nav>
+<footer class="ftr5">
+    <a href="CDU">Conditions générales d'utilisations</a>
+</footer>
+<div class="ecran">
+    <div class="carte" data-tilt>
+        <form>
+            <input type="text" name="Adresse Mail" placeholder="Adresse Mail">
+            <input type="text" name="Numéro de télephone" placeholder="Numéro de télephone">
+            <input type="text" name="Nom de l'entreprise" placeholder="Nom de l'entreprise">
+            <input type="text" name="Adresse de l'entreprise" placeholder="Adresse de l'entreprise">
+        </form>
+        <a href="{{ asset('pdf24_images_merged.pdf') }}" class="bouton">Télecharger</a>
+    </div>
+</div>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .navbar5 {
+        position: absolute;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: -25px;
+    }
+    .navbar5 a {
+        color: black;
+        text-decoration: none;
+        margin-left: -6px;
+        transition: color 0.5s;
+    }
+    .navbar5 a:hover {
+        color : #ff1648;
+    }
+    .navbar5 .nav-links5 ul{
+        display: flex;
+        padding: 30px 20px;
+        border: 1px solid rgba(255,255,255,0.3);
+        margin-left: -36px;
+        margin-top: -7px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        backdrop-filter: blur(5px);
+    }
+    .navbar5 .nav-links5 ul li{
+        margin: 0 25px;
+        list-style: none;
+
+    }
+    .ftr5 {
+        position: absolute;
+        bottom: 0;
+    }
+    .ftr5 a {
+        color: black;
+        list-style: none;
+        text-decoration: none;
+        text-align: center;
+    }
+    .ecran {
+        min-height: 100vh;
+        width: 100%;
+        background: url("Image3.png") no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .carte {
+        width: 90%;
+        max-width: 1500px;
+        color: aliceblue;
+        text-align: center;
+        padding: 32px 30px;
+        border: 1px solid rgba(255,255,255,0.3);
+        background: rgba(255,255,255,0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+        backdrop-filter: blur(5px);
+    }
+    .bouton {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 700;
+        background: black;
+        color: #dfdfdf;
+        padding: 10px 30px;
+        border-radius: 30px;
+        transition: color 0.5s;
+        margin-top: 25px;
+    }
+    .bouton:hover {
+        color: #ff1648;
+    }
+    .carte form{
+        display: flex;
+        align-items: center;
+        background: aliceblue;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 30px;
+    }
+    .carte form input{
+        border: 0;
+        outline: 0;
+        width: 100%;
+
+    }
+</style>
+</html>
